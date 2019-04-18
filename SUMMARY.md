@@ -1,4 +1,4 @@
-# Table of contents
+# 目录
 
-* [Initial page](README.md)
+* [前言](README.md)
 
