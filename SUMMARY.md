@@ -1,10 +1,19 @@
-# Table of contents
+# 目录
+
+### 文档地址
 
 * [我的技术文档](README.md)
+
+###  文档目录
+
 * [Android](android/README.md)
+
   * [刘海屏手机适配](android/liu-hai-ping-shou-ji-shi-pei.md)
   * [升级到gradle4.4-all后，library中的jar包无法被主module引入的问题](android/sheng-ji-dao-gradle4.4all-hou-library-zhong-de-jar-bao-wu-fa-bei-zhu-module-yin-ru-de-wen-ti.md)
   * [水波纹ripple统一添加说明](android/shui-bo-wen-ripple-tong-yi-tian-jia-shuo-ming.md)
+  * [删除ExtraTranslation多语言，快速精准操作步骤](android/删除ExtraTranslation多语言，快速精准操作步骤.md)
+
 * [项目管理](xiang-mu-guan-li/README.md)
+
   * [管理经验](project management/managerial experience.md)
 
