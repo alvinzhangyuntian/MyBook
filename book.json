@@ -1,8 +1,9 @@
 {
-    "title": "ÎÒµÄÊé",
+    "title": "æˆ‘çš„ä¹¦",
     "author": "Devin",
-    "description": "ÈçÊéÃûËùÊ¾",
-    "language": "zh",
+    "description": "å¦‚ä¹¦åæ‰€ç¤º",
+	"gitbook": ">=3.0.0",
+    "language": "zh-hans",
      "structure": {
         "readme": "README.md"
     }
