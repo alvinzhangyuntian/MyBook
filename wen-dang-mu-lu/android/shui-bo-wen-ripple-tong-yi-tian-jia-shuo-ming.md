@@ -88,7 +88,7 @@ drawable：
   </ripple>
   ```
 
-* ![](../.gitbook/assets/11.png)
+* ![](../../.gitbook/assets/11.png)
 
 ```java
 btn_orange_20_corners_selector.xml
