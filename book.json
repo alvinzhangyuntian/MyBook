@@ -1,9 +1,8 @@
 {
-    "title": "我的书",
+    "title":"MyBook",
     "author": "Devin",
-    "description": "如书名所示",
-	"gitbook": ">=3.0.0",
-    "language": "zh-hans",
+    "description": "",
+    "language": "zh",
      "structure": {
         "readme": "README.md"
     }
