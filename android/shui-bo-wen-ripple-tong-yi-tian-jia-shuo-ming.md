@@ -1,12 +1,12 @@
 # 水波纹ripple统一添加说明
 
 目前几种水波纹效果说明：  
- 1、圆形无边界（一般用作父布局背景或前）  
- 2、圆形有边界\(常用，一般用作父布局背景或前景\)  
- 3、方形有边界\(常用，一般用作父布局背景或前景\)  
- 4、图形表面水波纹\(常用，易被忽略的重点\)  
- 5、水波纹和selector配合\(常用，一般用作有选中效果的布局\)  
- Android系统已经提供给我们有边界和无边界（圆形）的效果（API要求21以上，如果没效果加上`android:clickable="true"`）
+1、圆形无边界（一般用作父布局背景或前）  
+2、圆形有边界\(常用，一般用作父布局背景或前景\)  
+3、方形有边界\(常用，一般用作父布局背景或前景\)  
+4、图形表面水波纹\(常用，易被忽略的重点\)  
+5、水波纹和selector配合\(常用，一般用作有选中效果的布局\)  
+Android系统已经提供给我们有边界和无边界（圆形）的效果（API要求21以上，如果没效果加上`android:clickable="true"`）
 
 ```java
 android:background="?android:attr/selectableItemBackground"
@@ -14,14 +14,14 @@ android:background="?android:attr/selectableItemBackgroundBorderless"
 ```
 
 但是，默认的效果颜色并不一定能满足开发（UI~）的要求  
- 所以，我们要自定义自己想要的效果  
- 通过`android:background="@drawable/ripple。。。"`设置
+所以，我们要自定义自己想要的效果  
+通过`android:background="@drawable/ripple。。。"`设置
 
-## 下面，就几种水波纹效果一一介绍 
+## 下面，就几种水波纹效果一一介绍
 
 主项目drawable-v21和drawable中已加入以下所有代码
 
-## 1. ripple\_bright\_oval\_no\_mask\(圆形无边界亮色水波纹，暗色为ripple\_dark\_oval\_no\_mask\) 
+## 1. ripple\_bright\_oval\_no\_mask\(圆形无边界亮色水波纹，暗色为ripple\_dark\_oval\_no\_mask\)
 
 drawable-v21：
 
@@ -31,8 +31,7 @@ drawable-v21：
 </ripple>
 ```
 
-drawable：  
-
+drawable：
 
 ```java
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -42,13 +41,12 @@ drawable：
 </selector>
 ```
 
-没错，就是这么简单，后面不再粘贴5.0以下代码  
+没错，就是这么简单，后面不再粘贴5.0以下代码
 
-
-## 2. ripple\_bright\_oval（圆形有边界亮色水波纹，暗色为ripple\_dark\_oval） 
+## 2. ripple\_bright\_oval（圆形有边界亮色水波纹，暗色为ripple\_dark\_oval）
 
 文章开头说了这些效果的使用位置，水波纹可以使用在背景和前景上  
- 当要加水波纹的区域layout为FrameLayout（实测RelativeLayout也适用）时，可以给布局加上`android:foreground="@drawable/ripple_bright_rectangle"`实现水波纹浮现在布局上面的效果&lt;/font&gt;
+当要加水波纹的区域layout为FrameLayout（实测RelativeLayout也适用）时，可以给布局加上`android:foreground="@drawable/ripple_bright_rectangle"`实现水波纹浮现在布局上面的效果&lt;/font&gt;
 
 ```java
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
@@ -61,7 +59,7 @@ drawable：
 </ripple>
 ```
 
-## 3. ripple\_bright\_rectangle（方形有边界亮色水波纹，暗色为ripple\_dark\_rectangle） 
+## 3. ripple\_bright\_rectangle（方形有边界亮色水波纹，暗色为ripple\_dark\_rectangle）
 
 ```java
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
@@ -71,10 +69,10 @@ drawable：
 </ripple>
 ```
 
-## 4. 重点：图形表面水波纹 
+## 4. 重点：图形表面水波纹
 
 通常，我们会遇到一些给某个图片按钮增加水波纹的需求，使用上面的几种效果已经无法达到自己内心的要求（UI那边也通不过~）  
- 举个栗子：
+举个栗子：
 
 ## 只是把内容换成相应的图片或者图形即可
 
@@ -88,7 +86,7 @@ drawable：
   </ripple>
   ```
 
-* ![](../../.gitbook/assets/11.png)
+* ![](../.gitbook/assets/111.png)
 
 ```java
 btn_orange_20_corners_selector.xml
@@ -104,8 +102,7 @@ btn_orange_20_corners_selector.xml
 </ripple>
 ```
 
-**5.如果在一个ripple标签中，添加一个item，在item的内部写上标签，那么这个RippleDrawable在按下的时候，同时具有水波效果和selector指定的图层。**  
-
+**5.如果在一个ripple标签中，添加一个item，在item的内部写上标签，那么这个RippleDrawable在按下的时候，同时具有水波效果和selector指定的图层。**
 
 ```java
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
@@ -119,8 +116,4 @@ btn_orange_20_corners_selector.xml
   </item>
 </ripple>
 ```
-
-### 
-
-
 

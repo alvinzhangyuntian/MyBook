@@ -1,12 +1,10 @@
 # 升级到gradle4.4-all后，library中的jar包无法被主module引入的问题
 
-  
 **首先说明：**
 
 api和implementation两种依赖的不同点在于：它们声明的依赖其他模块是否能使用。  
 api：当其他模块依赖于此模块时，此模块使用api声明的依赖包是可以被其他模块使用  
-implementation：当其他模块依赖此模块时，此模块使用implementation声明的依赖包只限于模块内部使用，不允许其他模块使用。  
-
+implementation：当其他模块依赖此模块时，此模块使用implementation声明的依赖包只限于模块内部使用，不允许其他模块使用。
 
 **所以**
 
