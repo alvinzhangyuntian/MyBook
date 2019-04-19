@@ -20,7 +20,7 @@ android:background="?android:attr/selectableItemBackgroundBorderless"
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
     android:color="@color/ripple_bright_color">
 </ripple>
-``` 
+```
 <font color="purple">drawable：</font><br>
 ```java
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -28,7 +28,7 @@ android:background="?android:attr/selectableItemBackgroundBorderless"
    <item android:drawable="@color/ripple_bright_color" android:state_focused="true"/>
    <item android:drawable="@color/transparent"/>
 </selector>
-``` 
+```
 没错，就是这么简单，后面不再粘贴5.0以下代码<br>
 #### 2. ripple_bright_oval（圆形有边界亮色水波纹，暗色为ripple_dark_oval）<br>
 <font size="3" face="宋体">文章开头说了这些效果的使用位置，水波纹可以使用在<font color="red">背景和前景</font>上<br>
@@ -42,7 +42,7 @@ android:background="?android:attr/selectableItemBackgroundBorderless"
         </shape>
     </item>
 </ripple>
-``` 
+```
 #### 3. ripple_bright_rectangle（方形有边界亮色水波纹，暗色为ripple_dark_rectangle）<br>
 ```java
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
@@ -50,7 +50,7 @@ android:background="?android:attr/selectableItemBackgroundBorderless"
     <item android:id="@android:id/mask"
         android:drawable="?android:colorAccent"/>
 </ripple>
-``` 
+```
 #### 4. 重点：图形表面水波纹<br>
 通常，我们会遇到一些给某个图片按钮增加水波纹的需求，使用上面的几种效果已经无法达到自己内心的要求（UI那边也通不过~）<br>
 举个栗子：
@@ -90,7 +90,7 @@ btn_orange_20_corners_selector.xml
         </selector>
     </item>
 </ripple>
-``` 
+```
 
 ##### 最后安利一下Markdown，挺好用
 
